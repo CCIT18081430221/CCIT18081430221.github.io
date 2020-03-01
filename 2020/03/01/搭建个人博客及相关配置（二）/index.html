@@ -4,9 +4,9 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="如何搭建个人博客以及相关配置 , 萌呆呆...">
-    <meta name="description" content="第一步 Hexo 搭建本地静态网页一、Hexo的环境配置——安装Node.js（10以上版本）和Git1.登录网址https://nodejs.org/en/download/；找到板块Download 。
-2.根据电脑的类型，选择相应的版">
+    <meta name="keywords" content="搭建个人博客及相关配置（二）, 萌呆呆...">
+    <meta name="description" content="#  第二步 搭建 Github 网页仓库一、Github的准备1.注册Github：右上角的sign in是登录，sign up是注册。
+2.新建仓库(Repository): 点击create repository按钮。注意仓库名称必须">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -14,7 +14,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>如何搭建个人博客以及相关配置  | 萌呆呆...</title>
+    <title>搭建个人博客及相关配置（二） | 萌呆呆...</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -304,12 +304,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/23.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">如何搭建个人博客以及相关配置 </h1>
+                    <h1 class="description center-align post-title">搭建个人博客及相关配置（二）</h1>
                 </div>
             </div>
         </div>
@@ -426,8 +426,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/">
-                                <span class="chip bg-color">搭建个人博客</span>
+                            <a href="/tags/%E6%90%AD%E5%BB%BAGithub%E7%BD%91%E9%A1%B5%E4%BB%93%E5%BA%93/">
+                                <span class="chip bg-color">搭建Github网页仓库</span>
                             </a>
                         
                     </div>
@@ -442,7 +442,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2020-02-29
+                    2020-03-01
                 </div>
                 
 
@@ -459,30 +459,20 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="第一步-Hexo-搭建本地静态网页"><a href="#第一步-Hexo-搭建本地静态网页" class="headerlink" title="第一步 Hexo 搭建本地静态网页"></a>第一步 Hexo 搭建本地静态网页</h2><h3 id="一、Hexo的环境配置——安装Node-js（10以上版本）和Git"><a href="#一、Hexo的环境配置——安装Node-js（10以上版本）和Git" class="headerlink" title="一、Hexo的环境配置——安装Node.js（10以上版本）和Git"></a><strong>一、Hexo的环境配置</strong>——<strong>安装Node.js（10以上版本）和Git</strong></h3><p>1.登录网址<a href="https://nodejs.org/en/download/" target="_blank" rel="noopener">https://nodejs.org/en/download/</a>；找到板块Download 。</p>
-<p>2.根据电脑的类型，选择相应的版本进行下载（那么如何确定自己电脑的类型呢？解决办法：计算机-&gt;右键-&gt;属性，查找得出本机是64位架构 ）因此，我选择：</p>
-<p><img src="http://q6g7kfr3b.bkt.clouddn.com/1CVLGPXK0.png" alt=""></p>
-<p>3.安装下载Node.js和Git,一路next就可以完成安装。（新版的Node.js已经集成了npm，所以Node.js安装好后npm也一并安装好了）检验是否安装成功在CMD窗口中输入下面指令：</p>
-<p>（1）输入 node -v，若显示版本号那么Node.js安装成功；</p>
-<p>（2）输入 npm -v，若显示版本号那么npm安装成功；</p>
-<p>Git安装完成后在CMD窗口中输入指令：git,如果列出Git的各种用法，则表示Git安装成功。</p>
-<h3 id="二、Hexo-的安装"><a href="#二、Hexo-的安装" class="headerlink" title="二、Hexo 的安装"></a><strong>二、Hexo 的安装</strong></h3><p><strong>1.安装Hexo</strong>：在CMD窗口使用下面的命令：npm install hexo-cli -g，安装完后如果可以看到hexo-cli的版本号，则表示安装成功，如果不放心可以输入hexo -v指令来核查。</p>
-<p><strong>2.创建Hexo博客根目录</strong>: 输入指令md blog,它会在CMD的当前路径下创建一个名为blog的文件夹。该文件夹保存你的各种博客资源及博文。（放在常用的位置较好）</p>
-<p>3.<strong>初始化Hexo博客</strong>：先执行指令cd blog,在执行指令hexo init。若出现“Start blogging with Hexo!”字符串，则表示初始化成功，Hexo就已经在我们本机部署成功了。</p>
-<p><img src="http://q6g7kfr3b.bkt.clouddn.com/1.png" alt=""></p>
-<h3 id="三、博客（本地）预览"><a href="#三、博客（本地）预览" class="headerlink" title="三、博客（本地）预览"></a><strong>三、博客（本地）预览</strong></h3><p><strong>1.启动Hexo服务</strong>：输入 hexo s 注：s=server，若有”Hexo is running at <code>http://localhost:4000/</code>字符串，则表示启动成功，Hexo当前就运行在上述网址。在浏览器中输入上述网址，如果看到新页面则大功告成。</p>
-<p><img src="http://q6g7kfr3b.bkt.clouddn.com/qq_pic_merged_1582947719203.jpg" alt=""></p>
-<h3 id="四、开篇写第一篇博文"><a href="#四、开篇写第一篇博文" class="headerlink" title="四、开篇写第一篇博文"></a><strong>四、开篇写第一篇博文</strong></h3><p><strong>1.设置编辑器路径</strong>：在站点根目录blog下新建<code>scripts</code>目录，然后再新建<code>auto_open.js</code>，在文件中填入以下内容：</p>
-<p><img src="http://q6g7kfr3b.bkt.clouddn.com/QQ%E6%88%AA%E5%9B%BE20200229115148.png" alt=""></p>
-<p><a href="https://www.typora.io/" target="_blank" rel="noopener">Typora</a>是<strong>Markdown开发工具</strong>，<code>start</code>后面的编辑器路径得修改为你电脑上Typora实际安装的位置。</p>
-<p><strong>2.新建第一篇博客文件</strong>：在 blog 文件下使用命令：hexo new 文件名。（我的文件名是helloccit）</p>
-<p><img src="http://q6g7kfr3b.bkt.clouddn.com/2.png" alt=""></p>
-<p>这样 hexo 就会帮我们在 blog\source_posts 下自动生成制定名称的文件,后缀名为.md。同时你会发现编辑器Typora也打开了，新文章就可以输入了。</p>
-<p><strong>3.（本地）查看新博文</strong>:</p>
-<p>首先清除旧数据（根目录下的public文件夹存放着旧有博客生成的HTML网页），执行指令hexo clean。</p>
-<p>然后生成新数据（生成新的HTML网页会存放到public文件夹下），执行指令hexo g，若实验结果出现连续出现<code>Generated:</code>字符串，则表示执行成功。</p>
-<p>最后启动Hexo服务，执行指令hexo s。若结果发现有”Hexo is running at <code>http://localhost:4000/</code>字符串，则表示启动成功。</p>
-<p>在浏览器中输入上述网址<code>http://localhost:4000/</code>,如果看到新页面则大功告成。</p>
+                <h2 id="第二步-搭建-Github-网页仓库"><a href="#第二步-搭建-Github-网页仓库" class="headerlink" title="#  第二步 搭建 Github 网页仓库"></a>#  第二步 搭建 Github 网页仓库</h2><h3 id="一、Github的准备"><a href="#一、Github的准备" class="headerlink" title="一、Github的准备"></a>一、Github的准备</h3><p><strong>1.注册Github</strong>：右上角的<code>sign in</code>是登录，<code>sign up</code>是注册。</p>
+<p><strong>2.新建仓库(Repository)</strong>: 点击<code>create repository</code>按钮。注意仓库名称必须写为<code>username.github.io</code> 其中<code>username</code>是你注册Github使用的用户名，也就是下图两个紫色覆盖区域的名称要相同。最后点击“create repository”</p>
+<p><img src="http://q6g7kfr3b.bkt.clouddn.com/3_LI.jpg" alt=""></p>
+<p><strong>3.完成后，如图所示点击该仓库，进入仓库的配置界面</strong></p>
+<p><img src="http://q6g7kfr3b.bkt.clouddn.com/4_LI.jpg" alt=""></p>
+<p>找到下图页面位置：</p>
+<p><img src="http://q6g7kfr3b.bkt.clouddn.com/5_LI.jpg" alt=""></p>
+<p>如果发现Github Pages这一部分有<code>Your site is published at https://username.github.io</code>字样，则表明仓库具备了网页展示功能。</p>
+<p><strong>4.登录上述网址，就会发现内容和仓库中文件的内容一模一样。</strong></p>
+<h3 id="二、绑定Hexo和Github"><a href="#二、绑定Hexo和Github" class="headerlink" title="二、绑定Hexo和Github"></a>二、绑定Hexo和Github</h3><p><strong>1.修改本地站点配置文件</strong>: 打开站点目录（<code>blog\</code>）下的<code>_config.yml</code>文件，将最后一部分修改如图所示</p>
+<p><img src="http://q6g7kfr3b.bkt.clouddn.com/6_LI.jpg" alt=""></p>
+<p>挡住的部分是你注册Github的用户名，<strong>注意:上述冒号的后面都有一个空格。</strong></p>
+<p><strong>2.安装关联hexo和git的工具</strong>: 输入指令npm install hexo-deployer-git –save，如果看到这个工具的版本号，则表明安装成功</p>
+<p>最后输入指令 hexo d，在浏览器中输入<code>https://username.github.io</code>,如果看到新页面则大功告成。</p>
 
             </div>
             <hr/>
@@ -508,7 +498,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://CCIT18081430221.github.io/2020/02/29/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E4%BB%A5%E5%8F%8A%E7%9B%B8%E5%85%B3%E9%85%8D%E7%BD%AE/">https://CCIT18081430221.github.io/2020/02/29/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E4%BB%A5%E5%8F%8A%E7%9B%B8%E5%85%B3%E9%85%8D%E7%BD%AE/</a>
+                    <a href="https://CCIT18081430221.github.io/2020/03/01/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E5%8F%8A%E7%9B%B8%E5%85%B3%E9%85%8D%E7%BD%AE%EF%BC%88%E4%BA%8C%EF%BC%89/">https://CCIT18081430221.github.io/2020/03/01/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E5%8F%8A%E7%9B%B8%E5%85%B3%E9%85%8D%E7%BD%AE%EF%BC%88%E4%BA%8C%EF%BC%89/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -546,8 +536,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/">
-                                    <span class="chip bg-color">搭建个人博客</span>
+                                <a href="/tags/%E6%90%AD%E5%BB%BAGithub%E7%BD%91%E9%A1%B5%E4%BB%93%E5%BA%93/">
+                                    <span class="chip bg-color">搭建Github网页仓库</span>
                                 </a>
                             
                         </div>
@@ -735,9 +725,10 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
+                <i class="far fa-dot-circle"></i>&nbsp;Current
+            </div>
             <div class="card">
                 <a href="/2020/03/01/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E5%8F%8A%E7%9B%B8%E5%85%B3%E9%85%8D%E7%BD%AE%EF%BC%88%E4%BA%8C%EF%BC%89/">
                     <div class="card-image">
@@ -756,9 +747,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-03-01
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-03-01
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -767,6 +758,7 @@
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -785,24 +777,25 @@
                 Next&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/02/22/helloccit/">
+                <a href="/2020/02/29/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E4%BB%A5%E5%8F%8A%E7%9B%B8%E5%85%B3%E9%85%8D%E7%BD%AE/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="helloccit">
+                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="如何搭建个人博客以及相关配置 ">
                         
-                        <span class="card-title">helloccit</span>
+                        <span class="card-title">如何搭建个人博客以及相关配置 </span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
+                            第一步 Hexo 搭建本地静态网页一、Hexo的环境配置——安装Node.js（10以上版本）和Git1.登录网址https://nodejs.org/en/download/；找到板块Download 。
+2.根据电脑的类型，选择相应的版
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-02-22
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-02-29
                             </span>
                         <span class="publish-author">
                             
@@ -815,8 +808,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/hello-%E4%BD%A0%E5%A5%BD%E5%95%8A/">
-                        <span class="chip bg-color">hello 你好啊</span>
+                    <a href="/tags/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/">
+                        <span class="chip bg-color">搭建个人博客</span>
                     </a>
                     
                 </div>
