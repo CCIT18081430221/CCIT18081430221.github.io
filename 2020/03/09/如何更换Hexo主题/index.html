@@ -469,21 +469,22 @@
             <div id="articleContent">
                 <p>搭建好个人网站后，可以做一些有意思的事情，比如：给我们的个人网站<strong>换个主题</strong>！加<strong>评论</strong>等功能来美化我们的博客。</p>
 <p><img src="http://q7u328s2p.bkt.clouddn.com/11.jpg" alt=""></p>
-<h1 id="主题"><a href="#主题" class="headerlink" title="主题"></a><strong><em>主题</em></strong></h1><h2 id="一、官网选主题"><a href="#一、官网选主题" class="headerlink" title="一、官网选主题"></a>一、官网选主题</h2><p>官方网址如下：<a href="https://hexo.io/themes/,选择自己所需的主题。" target="_blank" rel="noopener">https://hexo.io/themes/,选择自己所需的主题。</a></p>
+<h2 id="主题"><a href="#主题" class="headerlink" title="主题"></a>主题</h2><h4 id="一、官网选主题"><a href="#一、官网选主题" class="headerlink" title="一、官网选主题"></a>一、官网选主题</h4><p>官方网址如下：<a href="https://hexo.io/themes/,选择自己所需的主题。" target="_blank" rel="noopener">https://hexo.io/themes/,选择自己所需的主题。</a></p>
 <p><img src="http://q7u328s2p.bkt.clouddn.com/7.png" alt=""></p>
-<h2 id="二、下载主题"><a href="#二、下载主题" class="headerlink" title="二、下载主题"></a>二、下载主题</h2><p>我选择的主题是<strong>Matery</strong>，点击图片可以直接进入该主题开发好的个人网站,如下图所示：</p>
+<h4 id="二、下载主题"><a href="#二、下载主题" class="headerlink" title="二、下载主题"></a>二、下载主题</h4><p>我选择的主题是<strong>Matery</strong></p>
+<p><strong>1.进入主题个人网站：</strong>点击图片就可以进入该主题开发好的个人网站,如图所示</p>
 <p><img src="http://q7u328s2p.bkt.clouddn.com/8.png" alt=""></p>
-<p>如果点击蓝色加粗的字体 <strong>Matery</strong>，就会进入该主题的 <strong>GitHub</strong> 主页,然后如图所示点击紫色部分，就可以获得该主题仓库的下载链接至剪切板。</p>
+<p><strong>2.获得该主题仓库的下载链接：</strong>点击蓝色加粗的字体 <strong>Matery</strong>，进入该主题的 <strong>GitHub</strong> 主页,然后点击如图所示紫色部分，就可以获得该主题仓库的下载链接至剪切板。</p>
 <p><img src="http://q7u328s2p.bkt.clouddn.com/9_LI.jpg" alt=""></p>
-<p>接着我们删除根目录下的 themes 目录下一个名为 landscape 的文件夹（我们个人网站默认主题所在位置），删除后在该目录下右击 Git Bash Here，在 Git Bash 窗口中输入：<strong>git clone <a href="https://github.com/blinkfox/hexo-theme-matery.git" target="_blank" rel="noopener">https://github.com/blinkfox/hexo-theme-matery.git</a></strong>，这里的链接为选中的主题的下载链接。主题下载完成后，Git Bash 窗口中如下图所示：</p>
+<p><strong>3.下载主题：</strong>删除根目录下的 themes 目录下一个名为 landscape 的文件夹（我们个人网站默认主题所在位置），删除后在该目录下右击 Git Bash Here，在 Git Bash 窗口中输入：<strong>git clone <a href="https://github.com/blinkfox/hexo-theme-matery.git" target="_blank" rel="noopener">https://github.com/blinkfox/hexo-theme-matery.git</a></strong>，这里的链接为选中的主题的下载链接。主题下载完成后，Git Bash 窗口中如下图所示：</p>
 <p><img src="http://q7u328s2p.bkt.clouddn.com/10.png" alt=""></p>
-<p>然后你会发现themes 目录下，多了一个hexo-theme-matery的文件夹，那么现在我们就获取到了该主题的源码了。</p>
-<h2 id="三、配置主题"><a href="#三、配置主题" class="headerlink" title="三、配置主题"></a><strong>三</strong>、配置主题</h2><p>在根目录下，找到站点配置文件 <strong>_config.yml</strong>，将原来的主题名称 <strong>landscape</strong>，改为下载下来的主题所在的文件夹名称 <strong>hexo-theme-matery</strong>,如下图：</p>
+<p>最后你会发现themes 目录下，多了一个文件夹hexo-theme-matery，意味着我们获取到了该主题的源码了。</p>
+<h4 id="三、配置主题"><a href="#三、配置主题" class="headerlink" title="三、配置主题"></a><strong>三</strong>、配置主题</h4><p>在根目录下，找到站点配置文件 <strong>_config.yml</strong>，将原来的主题名称 <strong>landscape</strong>，改为下载下来的主题所在的文件夹名称 <strong>hexo-theme-matery</strong>,如下图：</p>
 <p><img src="http://q7u328s2p.bkt.clouddn.com/11.png" alt=""></p>
-<h2 id="四、部署主题"><a href="#四、部署主题" class="headerlink" title="四、部署主题"></a>四、部署主题</h2><p>主题启用配置好后，用Git bash输入<strong>hexo g</strong>来部署主题，<strong>hexo s</strong>本地预览主题，没有问题后用<strong>hexo d</strong>来上传代码。在浏览器中打开自己的个人网页，就能看到修改后的效果，到此，博客的主题更改完成。</p>
-<h1 id="评论板块"><a href="#评论板块" class="headerlink" title="评论板块"></a><strong><em>评论板块</em></strong></h1><p>关于评论板块，有很多选择，我选择的是Livere ，通过注册一系列后获得uid,全部配置好后就可以使用了。</p>
-<h4 id="不同的主题配置方法不同，大家需要查看主题的README-md文件来了解自己主题的配置方式和注意事项。其他的美化方式我就不一一说明了，可以通过自己选择的主题方法来更改。"><a href="#不同的主题配置方法不同，大家需要查看主题的README-md文件来了解自己主题的配置方式和注意事项。其他的美化方式我就不一一说明了，可以通过自己选择的主题方法来更改。" class="headerlink" title="不同的主题配置方法不同，大家需要查看主题的README.md文件来了解自己主题的配置方式和注意事项。其他的美化方式我就不一一说明了，可以通过自己选择的主题方法来更改。"></a><strong>不同的主题配置方法不同，大家需要查看主题的README.md文件来了解自己主题的配置方式和注意事项。其他的美化方式我就不一一说明了，可以通过自己选择的主题方法来更改。</strong></h4><p><img src="http://q7u328s2p.bkt.clouddn.com/12-1.jpg" alt=""></p>
-<h1 id="live2d"><a href="#live2d" class="headerlink" title="live2d"></a><strong><em>live2d</em></strong></h1><h5 id="1-安装插件-npm-install-–save-hexo-helper-live2d-如图："><a href="#1-安装插件-npm-install-–save-hexo-helper-live2d-如图：" class="headerlink" title="1.安装插件: npm install –save hexo-helper-live2d 如图："></a>1.安装插件: npm install –save hexo-helper-live2d 如图：</h5><p><img src="http://q7u328s2p.bkt.clouddn.com/16.png" alt=""></p>
+<h4 id="四、部署主题"><a href="#四、部署主题" class="headerlink" title="四、部署主题"></a>四、部署主题</h4><p>主题启用配置好后，用Git bash输入<strong>hexo g</strong>来部署主题，<strong>hexo s</strong>本地预览主题，没有问题后用<strong>hexo d</strong>来上传代码。在浏览器中打开自己的个人网页，就能看到修改后的效果，到此，博客的主题更改完成。</p>
+<h1 id="评论"><a href="#评论" class="headerlink" title="评论"></a>评论</h1><p>关于评论板块，有很多选择，我选择的是<strong>Livere</strong> ，通过注册一系列后获得uid,全部配置好后就可以使用了。当然不同的主题配置方法不同，大家需要查看主题的README.md文件来了解自己主题的配置方式和注意事项。其他的美化方式我就不一一说明了，可以通过自己选择的主题方法来更改吆。</p>
+<p><img src="http://q7u328s2p.bkt.clouddn.com/12-1.jpg" alt=""></p>
+<h1 id="Live2d"><a href="#Live2d" class="headerlink" title="Live2d"></a>Live2d</h1><h5 id="1-安装插件-npm-install-–save-hexo-helper-live2d-如图："><a href="#1-安装插件-npm-install-–save-hexo-helper-live2d-如图：" class="headerlink" title="1.安装插件: npm install –save hexo-helper-live2d 如图："></a>1.安装插件: npm install –save hexo-helper-live2d 如图：</h5><p><img src="http://q7u328s2p.bkt.clouddn.com/16.png" alt=""></p>
 <h5 id="2-安装下载动画人物库-如：npm-install-live2d-widget-model-输入你用的看板名字-D-如图："><a href="#2-安装下载动画人物库-如：npm-install-live2d-widget-model-输入你用的看板名字-D-如图：" class="headerlink" title="2.安装下载动画人物库 如：npm install live2d-widget-model-输入你用的看板名字 -D 如图："></a>2.安装下载动画人物库 如：npm install live2d-widget-model-输入你用的看板名字 -D 如图：</h5><p><img src="http://q7u328s2p.bkt.clouddn.com/17_LI.jpg" alt=""></p>
 <h5 id="3-根目录-config-yml配置里面添加："><a href="#3-根目录-config-yml配置里面添加：" class="headerlink" title="3.根目录_config.yml配置里面添加："></a>3.根目录_config.yml配置里面添加：</h5><p><img src="http://q7u328s2p.bkt.clouddn.com/18%20%282%29.png" alt=""></p>
 

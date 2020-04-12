@@ -464,30 +464,42 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="第一步-Hexo-搭建本地静态网页"><a href="#第一步-Hexo-搭建本地静态网页" class="headerlink" title="第一步 Hexo 搭建本地静态网页"></a>第一步 Hexo 搭建本地静态网页</h2><h3 id="一、Hexo的环境配置——安装Node-js（10以上版本）和Git"><a href="#一、Hexo的环境配置——安装Node-js（10以上版本）和Git" class="headerlink" title="一、Hexo的环境配置——安装Node.js（10以上版本）和Git"></a><strong>一、Hexo的环境配置</strong>——<strong>安装Node.js（10以上版本）和Git</strong></h3><p>1.登录网址<a href="https://nodejs.org/en/download/" target="_blank" rel="noopener">https://nodejs.org/en/download/</a>；找到板块Download 。</p>
+                <h2 id="第一步-Hexo-搭建本地静态网页"><a href="#第一步-Hexo-搭建本地静态网页" class="headerlink" title="第一步 Hexo 搭建本地静态网页"></a>第一步 Hexo 搭建本地静态网页</h2><h4 id="一、Hexo的环境配置——安装Node-js（10以上版本）和Git"><a href="#一、Hexo的环境配置——安装Node-js（10以上版本）和Git" class="headerlink" title="一、Hexo的环境配置——安装Node.js（10以上版本）和Git"></a><strong>一、Hexo的环境配置</strong>——<strong>安装Node.js（10以上版本）和Git</strong></h4><p>1.登录网址<a href="https://nodejs.org/en/download/" target="_blank" rel="noopener">https://nodejs.org/en/download/</a>；找到板块Download 。</p>
 <p>2.根据电脑的类型，选择相应的版本进行下载（那么如何确定自己电脑的类型呢？解决办法：计算机-&gt;右键-&gt;属性，查找得出本机是64位架构 ）因此，我选择：</p>
 <p><img src="http://q7u328s2p.bkt.clouddn.com/1CVLGPXK0.png" alt=""></p>
-<p>3.安装下载Node.js和Git,一路next就可以完成安装。（新版的Node.js已经集成了npm，所以Node.js安装好后npm也一并安装好了）检验是否安装成功在CMD窗口中输入下面指令：</p>
-<p>（1）输入 node -v，若显示版本号那么Node.js安装成功；</p>
-<p>（2）输入 npm -v，若显示版本号那么npm安装成功；</p>
-<p>Git安装完成后在CMD窗口中输入指令：git,如果列出Git的各种用法，则表示Git安装成功。</p>
-<h3 id="二、Hexo-的安装"><a href="#二、Hexo-的安装" class="headerlink" title="二、Hexo 的安装"></a><strong>二、Hexo 的安装</strong></h3><p><strong>1.安装Hexo</strong>：在CMD窗口使用下面的命令：npm install hexo-cli -g，安装完后如果可以看到hexo-cli的版本号，则表示安装成功，如果不放心可以输入hexo -v指令来核查。</p>
-<p><strong>2.创建Hexo博客根目录</strong>: 输入指令md blog,它会在CMD的当前路径下创建一个名为blog的文件夹。该文件夹保存你的各种博客资源及博文。（放在常用的位置较好）</p>
-<p>3.<strong>初始化Hexo博客</strong>：先执行指令cd blog,在执行指令hexo init。若出现“Start blogging with Hexo!”字符串，则表示初始化成功，Hexo就已经在我们本机部署成功了。</p>
+<p>3.安装下载Node.js和Git,一路next就可以完成安装。（新版的Node.js已经集成了npm，所以Node.js安装好后npm也一并安装好了）</p>
+<p>（1）点击安装<a href="https://nodejs.org/en/download/" target="_blank" rel="noopener">Node.js</a>完成后在CMD窗口中输入指令:<code>node -v</code></p>
+<p>​             若显示版本号那么Node.js安装成功。</p>
+<p>​              接着输入指令：<code>npm -v</code></p>
+<p>​              若显示版本号那么npm安装成功。</p>
+<p>（2）点击安装<a href="https://git-scm.com/downloads" target="_blank" rel="noopener">Git</a>,完成后在CMD窗口中输入指令:<code>git</code></p>
+<p>​          如果列出Git的各种用法，则表示Git安装成功。</p>
+<h4 id="二、Hexo-的安装"><a href="#二、Hexo-的安装" class="headerlink" title="二、Hexo 的安装"></a>二、Hexo 的安装</h4><p><strong>1.安装Hexo</strong>：在CMD窗口输入命令：<code>npm install hexo-cli -g</code></p>
+<p>安装完后如果可以看到hexo-cli的版本号，则表示安装成功，如果不放心可以输入指令<code>hexo -v</code>来核查。</p>
+<p>若结果显示版本号，则表示安装成功。</p>
+<p><strong>2.创建Hexo博客根目录</strong>: 输入指令<code>md blog</code></p>
+<p>要注意的是它会在CMD的当前路径下创建一个名为blog的文件夹。该文件夹保存你的各种博客资源及博文。（放在常用的位置较好）</p>
+<p><strong>3.初始化Hexo博客</strong>：依次执行两条指令<code>cd blog</code>和<code>hexo init</code></p>
+<p>若出现<strong>“Start blogging with Hexo!”</strong>字符串，则表示初始化成功，Hexo就已经在我们本机部署成功了。</p>
 <p><img src="http://q7u328s2p.bkt.clouddn.com/1.png" alt=""></p>
-<h3 id="三、博客（本地）预览"><a href="#三、博客（本地）预览" class="headerlink" title="三、博客（本地）预览"></a><strong>三、博客（本地）预览</strong></h3><p><strong>1.启动Hexo服务</strong>：输入 hexo s 注：s=server，若有”Hexo is running at <code>http://localhost:4000/</code>字符串，则表示启动成功，Hexo当前就运行在上述网址。在浏览器中输入上述网址，如果看到新页面则大功告成。</p>
+<h4 id="三、博客（本地）预览"><a href="#三、博客（本地）预览" class="headerlink" title="三、博客（本地）预览"></a><strong>三、博客（本地）预览</strong></h4><p><strong>1.启动Hexo服务</strong>：<code>hexo s</code></p>
+<p>注：s=server，若有<strong>”Hexo is running at <code>http://localhost:4000/</code></strong>字符串，则表示启动成功，</p>
+<p><strong>2.博客预览：</strong>在浏览器中输入上述网址，如果看到新页面则大功告成。</p>
 <p><img src="http://q7u328s2p.bkt.clouddn.com/qq_pic_merged_1582947719203.jpg" alt=""></p>
-<h3 id="四、开篇写第一篇博文"><a href="#四、开篇写第一篇博文" class="headerlink" title="四、开篇写第一篇博文"></a><strong>四、开篇写第一篇博文</strong></h3><p><strong>1.设置编辑器路径</strong>：在站点根目录blog下新建<code>scripts</code>目录，然后再新建<code>auto_open.js</code>，在文件中填入以下内容：</p>
+<h4 id="四、开篇写第一篇博文"><a href="#四、开篇写第一篇博文" class="headerlink" title="四、开篇写第一篇博文"></a><strong>四、开篇写第一篇博文</strong></h4><p><strong>1.设置编辑器路径</strong>：在站点根目录blog下新建<code>scripts</code>目录，然后再新建<code>auto_open.js</code>，在文件中填入以下内容：</p>
 <p><img src="http://q7u328s2p.bkt.clouddn.com/QQ%E6%88%AA%E5%9B%BE20200229115148.png" alt=""></p>
-<p><a href="https://www.typora.io/" target="_blank" rel="noopener">Typora</a>是<strong>Markdown开发工具</strong>，<code>start</code>后面的编辑器路径得修改为你电脑上Typora实际安装的位置。</p>
-<p><strong>2.新建第一篇博客文件</strong>：在 blog 文件下使用命令：hexo new 文件名。（我的文件名是helloccit）</p>
+<p>注：<a href="https://www.typora.io/" target="_blank" rel="noopener">Typora</a>是<strong>Markdown开发工具</strong>，<code>start</code>后面的编辑器路径得修改为你电脑上Typora实际安装的位置。</p>
+<p><strong>2.新建第一篇博客文件</strong>：在 blog 文件下使用命令：<code>hexo new &quot;文件名&quot;</code>（我的文件名是helloccit）</p>
 <p><img src="http://q7u328s2p.bkt.clouddn.com/2.png" alt=""></p>
 <p>这样 hexo 就会帮我们在 blog\source_posts 下自动生成制定名称的文件,后缀名为.md。同时你会发现编辑器Typora也打开了，新文章就可以输入了。</p>
+<hr>
 <p><strong>3.（本地）查看新博文</strong>:</p>
-<p>首先清除旧数据（根目录下的public文件夹存放着旧有博客生成的HTML网页），执行指令hexo clean。</p>
-<p>然后生成新数据（生成新的HTML网页会存放到public文件夹下），执行指令hexo g，若实验结果出现连续出现<code>Generated:</code>字符串，则表示执行成功。</p>
-<p>最后启动Hexo服务，执行指令hexo s。若结果发现有”Hexo is running at <code>http://localhost:4000/</code>字符串，则表示启动成功。</p>
-<p>在浏览器中输入上述网址<code>http://localhost:4000/</code>,如果看到新页面则大功告成。</p>
+<p>（1）清除旧数据（根目录下的public文件夹存放着旧有博客生成的HTML网页）执行指令：<code>hexo clean</code></p>
+<p>（2）生成新数据（生成新的HTML网页会存放到public文件夹下）执行指令：<code>hexo g</code></p>
+<p>若实验结果出现连续出现<code>Generated:</code>字符串，则表示执行成功。</p>
+<p>（3）启动Hexo服务，执行指令：<code>hexo s</code></p>
+<p>若结果发现有<strong>”Hexo is running at <code>http://localhost:4000/</code></strong>字符串，则表示启动成功。</p>
+<p>（4）博客预览：在浏览器中输入上述网址<code>http://localhost:4000/</code>,如果看到新页面则大功告成。</p>
 
             </div>
             <hr/>
