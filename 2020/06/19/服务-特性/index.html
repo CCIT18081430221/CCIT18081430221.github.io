@@ -4,18 +4,12 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="关于网页蓝牙连接micro:bit, 萌小呆...">
-    <meta name="description" content="Tips: 项目二是关于用网页蓝牙控制microbit开发板实现各种功能，下面来说一说准备工作。
+    <meta name="keywords" content="服务 , 特性, 萌小呆...">
+    <meta name="description" content="蓝牙当中最基本的概念为服务（Service）和 特性（Characterists）
+一、显示BBC设备的Led服务及它的任意两个特性1.先查看自己的BBC Microbit开发板提供的有关蓝牙的服务：
+在谷歌浏览器上输入：
 
-
-
-
-
-
-一.确认自己的电脑上是否有蓝牙装备
- 有两个方法如下：
- 1.直接在搜索框搜索，查看是否有蓝牙设备。
- 2.在chrome浏览器地">
+chrome:">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -23,7 +17,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>关于网页蓝牙连接micro:bit | 萌小呆...</title>
+    <title>服务 , 特性 | 萌小呆...</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -313,12 +307,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/20.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/66.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">关于网页蓝牙连接micro:bit</h1>
+                    <h1 class="description center-align post-title">服务 , 特性</h1>
                 </div>
             </div>
         </div>
@@ -433,13 +427,9 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                    <div class="article-tag">
-                        
-                            <a href="/tags/%E7%BD%91%E9%A1%B5%E8%93%9D%E7%89%99/">
-                                <span class="chip bg-color">网页蓝牙</span>
-                            </a>
-                        
-                    </div>
+                          <div class="article-tag">
+                            <span class="chip bg-color">No tag</span>
+                          </div>
                     
                 </div>
                 <div class="col s5 right-align">
@@ -451,7 +441,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2020-06-16
+                    2020-06-19
                 </div>
                 
 
@@ -473,85 +463,72 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>Tips: 项目二是关于用网页蓝牙控制microbit开发板实现各种功能，下面来说一说准备工作。</p>
-<img src="http://qc5db8vuj.bkt.clouddn.com/abe1eea3ca79fc28-c577ebdcb0f3dbcc-94f50fcfe77dacf7fb782880696b0460.jpg" style="zoom: 33%;" />
-
-
-
-
-
-<h4 id="一-确认自己的电脑上是否有蓝牙装备"><a href="#一-确认自己的电脑上是否有蓝牙装备" class="headerlink" title="一.确认自己的电脑上是否有蓝牙装备"></a>一.确认自己的电脑上是否有蓝牙装备</h4><hr>
-<p> 有两个方法如下：</p>
-<p> 1.直接在搜索框搜索，查看是否有蓝牙设备。</p>
-<p> 2.在chrome浏览器地址栏中输入 chrome://bluetooth-internals查看。</p>
-<p><img src="http://qc5db8vuj.bkt.clouddn.com/117.png" alt=""></p>
-<h4 id="二-检查本机系统和chrome浏览器版本"><a href="#二-检查本机系统和chrome浏览器版本" class="headerlink" title="二.检查本机系统和chrome浏览器版本"></a>二.检查本机系统和chrome浏览器版本</h4><hr>
-<p>1.检查windows 10是否在1703及以上</p>
+                <p>蓝牙当中最基本的概念为<strong>服务（Service）</strong>和 <strong>特性（Characterists）</strong></p>
+<h4 id="一、显示BBC设备的Led服务及它的任意两个特性"><a href="#一、显示BBC设备的Led服务及它的任意两个特性" class="headerlink" title="一、显示BBC设备的Led服务及它的任意两个特性"></a>一、显示BBC设备的Led服务及它的任意两个特性</h4><p>1.先查看自己的BBC Microbit开发板提供的有关蓝牙的服务：</p>
+<p>在谷歌浏览器上输入：</p>
 <blockquote>
-<p>win+r打开winver窗口查看</p>
+<p>chrome://bluetooth-internals</p>
 </blockquote>
-<p>2.检查chrome浏览器是否在70.0.3526.0及以上</p>
-<blockquote>
-<p>帮助-&gt;关于Google Chrome</p>
-</blockquote>
-<h4 id="三-连接（下载到开发板、创建html文件、完善部分）"><a href="#三-连接（下载到开发板、创建html文件、完善部分）" class="headerlink" title="三.连接（下载到开发板、创建html文件、完善部分）"></a>三.连接（下载到开发板、创建html文件、完善部分）</h4><hr>
-<p>1.下载固件到开发板中进行激活（启动板子的蓝牙设备功能），用USB线连接开发板和电脑，出现Hi！，就成功了。（只是电脑本机使用）</p>
-<p>2.用chrome浏览器下载，点击inspect出现connected表示连接成功，此时板子会出现C，表示设备连接成功。</p>
-<img src="http://qc5db8vuj.bkt.clouddn.com/118.png" style="zoom:80%;" />
+<img src="http://qc5db8vuj.bkt.clouddn.com/%E6%9C%8D%E5%8A%A11.png" style="zoom: 33%;" />
+
+
+
+<p>能够发现实验板带了八个服务，实验板所带的服务就是蓝色区域，（有时候会将BBC实验板叫做services）。</p>
+<img src="http://qc5db8vuj.bkt.clouddn.com/%E6%9C%8D%E5%8A%A12.png" style="zoom: 50%;" />
+
+
+
+<p>每个服务都是靠数字区分的，又叫做UUID具有唯一性。</p>
+<img src="http://qc5db8vuj.bkt.clouddn.com/%E6%9C%8D%E5%8A%A15%20%282%29.png" style="zoom: 50%;" />
+
+
+
+<p>你想用哪个服务就找到相对应的服务，上图第一个是LED服务，那就要找到能够控制板子上面灯服务的特性（每一个服务可能有好几个特性），不同的特性对应的功能也不同。</p>
+<p>打开BBC板提供有关的蓝牙的各种服务的网站：<a href="https://lancaster-university.github.io/microbit-docs/resources/bluetooth/bluetooth_profile.html，找到Led服务：" target="_blank" rel="noopener">https://lancaster-university.github.io/microbit-docs/resources/bluetooth/bluetooth_profile.html，找到Led服务：</a></p>
+<p><img src="http://qc5db8vuj.bkt.clouddn.com/%E6%9C%8D%E5%8A%A13.png" alt=""></p>
+<p>2.如何在控制台上显示led服务及特性</p>
+<p>新增一个名为discoverSvcsAndChars()的函数</p>
+<p>首先添加一些标志变量，来表示某一个服务或特性是否被发现，如：has_accelerometer_service，has_led_service，has_temperature_service，如果发现，这个变量就设置为true；反之，则保持默认的false。</p>
+<p><img src="http://qc5db8vuj.bkt.clouddn.com/04.png" alt=""></p>
+<p><img src="http://qc5db8vuj.bkt.clouddn.com/%E6%9C%8D%E5%8A%A112.png" alt=""></p>
+<p>新增一个名为setDiscoveryStatus()的函数</p>
+<p><img src="http://qc5db8vuj.bkt.clouddn.com/%E6%9C%8D%E5%8A%A113.png" alt=""></p>
+<p>  OK,完成</p>
+<h4 id="二、显示BBC设备的温度服务及它的一个特性"><a href="#二、显示BBC设备的温度服务及它的一个特性" class="headerlink" title="二、显示BBC设备的温度服务及它的一个特性"></a><strong>二、显示BBC设备的温度服务及它的一个特性</strong></h4><p>1.在蓝牙连接的状态下，打开<a href="https://makecode.microbit.org/v0/89975-20684-84568-20127" target="_blank" rel="noopener">https://makecode.microbit.org/v0/89975-20684-84568-20127</a> 进行在线源码编辑，搜索框搜蓝牙,将需要的模块拽出来，放好后保存下载：</p>
+<img src="http://qc5db8vuj.bkt.clouddn.com/%E6%9C%8D%E5%8A%A17.png" style="zoom: 80%;" />
+
+<p>、</p>
+<img src="http://qc5db8vuj.bkt.clouddn.com/%E6%9C%8D%E5%8A%A18_LI.jpg" style="zoom: 80%;" />
 
 
 
 
 
-
-
-<p>3.实现BBC micro:bit蓝牙设备连接也可以进行程序编写，我的编码软件是Visual Studio Code，下面我将实现功能的过程分别写出来</p>
-<p>（1）新建html文件</p>
-<img src="http://qc5db8vuj.bkt.clouddn.com/119.png" style="zoom:80%;" />
-
-<img src="http://qc5db8vuj.bkt.clouddn.com/120.png" style="zoom:80%;" />
+<p>2.将下载的固件.hex文件移到开发板对应的MINCROBIT（F)盘中，这个时候打开Chrome自带的蓝牙工具，进行连接，连接成功后会发现服务已被添加成功。</p>
+<img src="http://qc5db8vuj.bkt.clouddn.com/%E6%9C%8D%E5%8A%A18%20%282%29.png" style="zoom: 80%;" />
 
 
 
 
 
-<p>(2)用chrome浏览器打开此文件，点start scan即可，就会有一个对话框弹出来，如图：</p>
-<img src="http://qc5db8vuj.bkt.clouddn.com/121.png" style="zoom:80%;" />
-
-<p>接着点击配对，你会发现网址上有蓝牙标志并且旁边显示连接成功,开发板如果显示C就证明连接成功了，</p>
-<p><img src="http://qc5db8vuj.bkt.clouddn.com/124.png" alt=""></p>
-<p><img src="http://qc5db8vuj.bkt.clouddn.com/123.png" alt=""></p>
-<img src="http://qc5db8vuj.bkt.clouddn.com/125.jpg" style="zoom:80%;" />
-
-
-
-<blockquote>
-<p>有错误可点击F12查看代码。</p>
-</blockquote>
-<p>（3）这还没有结束，我们还需要构造控制断开的函数，function函数（显示蓝牙当前连接的状态），除此之外还要添加一个两行一列表格，代码细节就不多讲了，依次看图：</p>
-<img src="http://qc5db8vuj.bkt.clouddn.com/127.png" style="zoom:80%;" />
-
-
-
-<img src="http://qc5db8vuj.bkt.clouddn.com/126.png" style="zoom:80%;" />
-
-
-
-<img src="http://qc5db8vuj.bkt.clouddn.com/128.png" style="zoom:80%;" />
-
-
-
-<blockquote>
-<p>效果就是Connected那由false变成了true，底下的按钮变成了有着断开功能的按钮且板子上出现字母C，点击断开按钮（Disconnect），BBC板子上就会出现字母 D。</p>
-</blockquote>
-<img src="http://qc5db8vuj.bkt.clouddn.com/131.jpg" style="zoom:80%;" />
+<p>3.修改电脑端部分源码,添加温度服务，特性:</p>
+<img src="http://qc5db8vuj.bkt.clouddn.com/01.png" style="zoom: 80%;" />
 
 
 
 
 
-<p>OK，结束。</p>
-<img src="http://qc5db8vuj.bkt.clouddn.com/d7036c9a17f5fda2-7fc0a62944486ce5-25dd4825822d8b35be90bb77f45a21ab.jpg" style="zoom: 50%;" />
+<p>4.连接成功后，按F12查看BBC板特性：</p>
+<img src="http://qc5db8vuj.bkt.clouddn.com/cc.png" style="zoom:80%;" />
+
+
+
+
+
+<img src="http://qc5db8vuj.bkt.clouddn.com/C.jpg" style="zoom:80%;" />
+
+<p>OK,完成。</p>
+
             </div>
             <hr/>
 
@@ -576,7 +553,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://CCIT18081430221.github.io/2020/06/16/%E5%85%B3%E4%BA%8E%E7%BD%91%E9%A1%B5%E8%93%9D%E7%89%99%E8%BF%9E%E6%8E%A5micro-bit/">https://CCIT18081430221.github.io/2020/06/16/%E5%85%B3%E4%BA%8E%E7%BD%91%E9%A1%B5%E8%93%9D%E7%89%99%E8%BF%9E%E6%8E%A5micro-bit/</a>
+                    <a href="https://CCIT18081430221.github.io/2020/06/19/%E6%9C%8D%E5%8A%A1-%E7%89%B9%E6%80%A7/">https://CCIT18081430221.github.io/2020/06/19/%E6%9C%8D%E5%8A%A1-%E7%89%B9%E6%80%A7/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -613,11 +590,7 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            
-                                <a href="/tags/%E7%BD%91%E9%A1%B5%E8%93%9D%E7%89%99/">
-                                    <span class="chip bg-color">网页蓝牙</span>
-                                </a>
-                            
+                            <span class="chip bg-color">No tag</span>
                         </div>
                     
                 </div>
@@ -803,9 +776,10 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
+                <i class="far fa-dot-circle"></i>&nbsp;Current
+            </div>
             <div class="card">
                 <a href="/2020/06/19/%E6%9C%8D%E5%8A%A1-%E7%89%B9%E6%80%A7/">
                     <div class="card-image">
@@ -827,9 +801,9 @@ chrome:
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-06-19
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-06-19
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -838,6 +812,7 @@ chrome:
                         </span>
                     </div>
                 </div>
+
                 
             </div>
         </div>
@@ -848,27 +823,34 @@ chrome:
                 Next&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/05/31/%E6%8E%A8%E8%8D%90%E4%B9%A6%E7%B1%8D%E5%95%A6/">
+                <a href="/2020/06/16/%E5%85%B3%E4%BA%8E%E7%BD%91%E9%A1%B5%E8%93%9D%E7%89%99%E8%BF%9E%E6%8E%A5micro-bit/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="推荐书籍啦">
+                        <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="关于网页蓝牙连接micro:bit">
                         
-                        <span class="card-title">推荐书籍啦</span>
+                        <span class="card-title">关于网页蓝牙连接micro:bit</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            推荐书籍：《活着》  
-作者：余华
-人是为了纯粹的活着而活着，而绝非为了活着以外的事情而活着。
-​                                                                       
+                            Tips: 项目二是关于用网页蓝牙控制microbit开发板实现各种功能，下面来说一说准备工作。
+
+
+
+
+
+
+一.确认自己的电脑上是否有蓝牙装备
+ 有两个方法如下：
+ 1.直接在搜索框搜索，查看是否有蓝牙设备。
+ 2.在chrome浏览器地
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-05-31
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-06-16
                             </span>
                         <span class="publish-author">
                             
@@ -881,8 +863,8 @@ chrome:
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E4%B9%A6/">
-                        <span class="chip bg-color">书~</span>
+                    <a href="/tags/%E7%BD%91%E9%A1%B5%E8%93%9D%E7%89%99/">
+                        <span class="chip bg-color">网页蓝牙</span>
                     </a>
                     
                 </div>
